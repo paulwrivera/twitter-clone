@@ -1,3 +1,6 @@
+// TypeScript disabled temporarily.
+// @ts-nocheck
+
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
@@ -9,6 +12,7 @@ import Modal from '../components/Modal';
 import { useRecoilState } from 'recoil';
 import { modalState } from '../atoms/modalAtom';
 import Widgets from '../components/Widgets';
+
 
 const Home: NextPage = ({trendingResults, followResults, providers}) => {
   const { data: session } = useSession();
