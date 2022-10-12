@@ -46,7 +46,11 @@ export async function getServerSideProps(context: any) {
   //   (res) => res.json()
   // );
 
-    const trendingResults = [
+  type Results = {
+    [key: string]: any;
+  };
+
+    const trendingResults:Results = [
       {
           heading: "2023 League of Legends Worlds · LIVE",
           description: "DRX vs. Rogues clash in the 2023 World Cup finals",
@@ -72,7 +76,7 @@ export async function getServerSideProps(context: any) {
           ]
       }
   ];
-  const followResults = [
+  const followResults:Results = [
     {
         userImg: "https://rebrand.ly/25b9ce",
         username: "Paul Hobbs",
